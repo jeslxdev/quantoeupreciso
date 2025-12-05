@@ -1,15 +1,25 @@
 .financial-form {
-  height: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+}
+
+@media (min-width: 1025px) {
+  .financial-form {
+    height: 100%;
+    overflow: hidden;
+  }
 }
 
 .form-content {
   flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
   padding-right: 0.25rem;
+}
+
+@media (min-width: 1025px) {
+  .form-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
 }
 
 .form-content::-webkit-scrollbar {
@@ -168,17 +178,7 @@
 }
 
 @media (max-width: 1024px) {
-  .financial-form {
-    height: auto;
-    overflow: visible;
-  }
-
-  .form-content {
-    overflow: visible;
-    padding-right: 0;
-  }
-
-  .form-footer {
+  .form-section h2 {
     position: relative;
     margin-top: 0.75rem;
     border-top: 1px solid #e5e7eb;

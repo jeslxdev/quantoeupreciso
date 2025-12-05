@@ -244,13 +244,6 @@
 }
 
 @media (max-width: 1024px) {
-  .result-display {
-    flex: none;
-    height: auto;
-    overflow-y: visible;
-    padding-right: 0;
-  }
-
   .result-card,
   .recommendation-section,
   .tips-section {
