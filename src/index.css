@@ -11,8 +11,6 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
-  height: 100vh;
 }
 
 code {
@@ -20,8 +18,15 @@ code {
     monospace;
 }
 
-#root {
-  height: 100vh;
-  overflow: hidden;
+@media (min-width: 1025px) {
+  body {
+    overflow: hidden;
+    height: 100vh;
+  }
+
+  #root {
+    height: 100vh;
+    overflow: hidden;
+  }
 }
 
